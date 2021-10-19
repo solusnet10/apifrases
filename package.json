@@ -1,0 +1,27 @@
+{
+  "name": "apifrases",
+  "version": "1.0.0",
+  "description": "API para estudos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node node_modules/nodemon/bin/nodemon bin/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solusnet10/apifrases.git"
+  },
+  "author": "Estevam - SolusNet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solusnet10/apifrases/issues"
+  },
+  "homepage": "https://github.com/solusnet10/apifrases#readme",
+  "dependencies": {
+    "debug": "^4.3.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
