@@ -9,15 +9,17 @@ const app = express()
 
 // conexão com o banco de dados
 mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
+    useUnifiedTopology: true,
     useNewUrlParser: true
 })
+
 const db = mongoose.connection
 
 db.on('connected', () => {
     console.log('Mongoose Conexão padrão está aberta')
 })
 
-db.on('eoor', err => {
+db.on('error', err => {
     console.log(`Mongoose default connection has occured \n${err}`)
 })
 
@@ -33,6 +35,9 @@ process.on('SIGINT', () => {
         process.exit(0)
     })
 })
+
+// Load Models
+const Frases = require('./models/frases')
 
 /**
  * Careegando as rotas
