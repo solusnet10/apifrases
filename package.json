@@ -19,7 +19,9 @@
   "homepage": "https://github.com/solusnet10/apifrases#readme",
   "dependencies": {
     "debug": "^4.3.2",
-    "express": "^4.17.1"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11"
   },
   "devDependencies": {
     "nodemon": "^2.0.14"
