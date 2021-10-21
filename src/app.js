@@ -45,4 +45,7 @@ const Frases = require('./models/frases')
 const indexRoutes = require('./routes/index-routes')
 app.use('/', indexRoutes)
 
+const frasesRoutes = require('./routes/frases-routes')
+app.use('/frases', frasesRoutes)
+
 module.exports = app
